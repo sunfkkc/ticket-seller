@@ -12,7 +12,7 @@ public class Bag {
         this.invitation = invitation;
     }
 
-    public boolean hasInvitation(){
+    private boolean hasInvitation(){
         return invitation != null;
     }
 
@@ -20,11 +20,11 @@ public class Bag {
         return ticket != null;
     }
 
-    public void setTicket(Ticket ticket) {
+    private void setTicket(Ticket ticket) {
         this.ticket = ticket;
     }
 
-    public void minusAmount(Long amount) {
+    private void minusAmount(Long amount) {
         this.amount -= amount;
     }
     public void plusAmount(Long amount) {
