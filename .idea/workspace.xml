@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94986d0b-9084-40ff-a219-6ca61faab925" name="Changes" comment="feat: 초대장 클래스 생성">
-      <change afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
+    <list default="true" id="94986d0b-9084-40ff-a219-6ca61faab925" name="Changes" comment="feat: 관람객의 가방 클래스 생성">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,7 @@
       <workItem from="1677085717613" duration="3647000" />
       <workItem from="1677316227986" duration="10636000" />
       <workItem from="1677476414350" duration="5607000" />
-      <workItem from="1677656743314" duration="818000" />
+      <workItem from="1677656743314" duration="1293000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1677657255657</created>
@@ -121,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677657473869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 티켓 클래스 생성">
+      <created>1677657588689</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677657588689</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 관람객의 가방 클래스 생성">
+      <created>1677657956666</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677657956666</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +157,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="feat: 초대장 클래스 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 초대장 클래스 생성" />
+    <MESSAGE value="feat: 티켓 클래스 생성" />
+    <MESSAGE value="feat: 관람객의 가방 클래스 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 관람객의 가방 클래스 생성" />
   </component>
 </project>
