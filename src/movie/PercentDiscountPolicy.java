@@ -1,10 +1,10 @@
 package movie;
 
-public class PercentDefaultDiscountPolicy extends DefaultDiscountPolicy {
+public class PercentDiscountPolicy extends DefaultDiscountPolicy {
 
     private double percent;
 
-    public PercentDefaultDiscountPolicy(double percent, DiscountCondition... conditions) {
+    public PercentDiscountPolicy(double percent, DiscountCondition... conditions) {
         super(conditions);
         this.percent = percent;
     }

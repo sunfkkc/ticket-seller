@@ -1,9 +1,9 @@
 package movie;
 
-public class AmountDefaultDiscountPolicy extends DefaultDiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
     private Money discountAmount;
 
-    public AmountDefaultDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {
+    public AmountDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {
         super(conditions);
         this.discountAmount = discountAmount;
     }
