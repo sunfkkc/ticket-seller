@@ -1,6 +1,6 @@
 package movie;
 
-public class NoneDiscountPolicy extends DiscountPolicy{
+public class NoneDefaultDiscountPolicy extends DefaultDiscountPolicy {
     @Override
     protected Money getDiscountAmount(Screening screening) {
         return Money.ZERO;
