@@ -1,7 +1,6 @@
 package data_driven_movie;
 
 import movie.Money;
-import movie.Screening;
 
 public class Reservation {
 
