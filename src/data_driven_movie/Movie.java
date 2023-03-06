@@ -1,6 +1,5 @@
 package data_driven_movie;
 
-import movie.DiscountCondition;
 import movie.Money;
 
 import java.time.Duration;
