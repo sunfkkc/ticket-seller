@@ -33,5 +33,31 @@ public class Movie {
         return discountConditions.stream().anyMatch( discountCondition -> discountCondition.isSatisfiedBy( screening));
     }
 
+    private Money calculateDiscountAmount(){
+
+        switch (movieType){
+
+            case AMOUNT_DISCOUNT:
+                return calculateAmountDiscountAmount();
+            case PERCENT_DISCOUNT:
+                return calculatePercentDiscountAmount();
+            case NONE_DISCOUNT:
+                return calculateNoneDiscountAmount();
+        }
+
+        throw new IllegalStateException();
+    }
+
+    private Money calculateAmountDiscountAmount(){
+        return discountAmount;
+    }
+
+    private Money calculatePercentDiscountAmount(){
+        return fee.times(discountPercent);
+    }
+
+    private Money calculateNoneDiscountAmount(){
+        return Money.ZERO;
+    }
 
 }
