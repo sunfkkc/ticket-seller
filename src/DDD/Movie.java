@@ -39,6 +39,7 @@ public abstract class Movie {
 
     abstract protected Money calculateDiscountAmount();
 
-
-
+    protected Money getFee() {
+        return fee;
+    }
 }
