@@ -28,5 +28,10 @@ public class Movie {
 
     }
 
+    private boolean isDiscountable( Screening screening){
+
+        return discountConditions.stream().anyMatch( discountCondition -> discountCondition.isSatisfiedBy( screening));
+    }
+
 
 }
