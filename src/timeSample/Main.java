@@ -154,6 +154,19 @@ public class Main {
 
     }
 
+    private static void sample12(){
+
+        DateTimeFormatter pattern = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime localDateTime = LocalDateTime.parse("2023/03/24 10:35:47",pattern);
+        System.out.println(localDateTime);
+
+        String httpRequestData = "2023년03월24일";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년MM월dd일");
+        LocalDate date = LocalDate.parse(httpRequestData, formatter);
+        System.out.println(date);
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -168,6 +181,7 @@ public class Main {
         //Main.sample8();
         //Main.sample9();
         //Main.sample10();
-        Main.sample11();
+        //Main.sample11();
+        Main.sample12();
     }
 }
