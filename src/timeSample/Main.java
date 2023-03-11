@@ -1,6 +1,8 @@
 package timeSample;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.time.temporal.*;
 
 class After2WeaksMonday implements TemporalAdjuster {
@@ -141,6 +143,17 @@ public class Main {
         System.out.println(time2);
     }
 
+    private static void sample11(){
+
+        String date = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
+        System.out.println(date);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        System.out.println(LocalDate.now().format(formatter));
+
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -154,6 +167,7 @@ public class Main {
         //Main.sample7();
         //Main.sample8();
         //Main.sample9();
-        Main.sample10();
+        //Main.sample10();
+        Main.sample11();
     }
 }
