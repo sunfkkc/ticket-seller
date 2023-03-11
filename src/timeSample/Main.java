@@ -27,9 +27,20 @@ public class Main {
         System.out.println(localDateTime);
     }
 
+    private static void sample3(){
+
+        LocalDate lastDate = LocalDate.ofYearDay(2023,100);
+        System.out.println(lastDate); //2023년 1월 1일로부터 100일 후
+
+        LocalTime lastTime = LocalTime.ofSecondOfDay(80000);
+        System.out.println(lastTime); // 00:00 로부터 8만초가 지난 시간
+
+    }
+
     public static void main(String[] args) {
 
         //Main.sample1();
-        Main.sample2();
+        //Main.sample2();
+        Main.sample3();
     }
 }
