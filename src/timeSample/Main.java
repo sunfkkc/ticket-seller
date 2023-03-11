@@ -75,6 +75,16 @@ public class Main {
 
     }
 
+    private static void sample7(){
+
+        LocalDate date = LocalDate.of(2023, 3, 10);
+        LocalDate date1 = LocalDate.of(2023, 4, 10);
+
+        System.out.println(date.isAfter(date1));
+        System.out.println(date.isBefore(date1));
+        System.out.println(date.isEqual(date1));
+    }
+
 
 
     public static void main(String[] args) {
@@ -84,6 +94,7 @@ public class Main {
         //Main.sample3();
         //Main.sample4();
         //Main.sample5();
-        Main.sample6();
+        //Main.sample6();
+        Main.sample7();
     }
 }
