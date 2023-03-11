@@ -1,9 +1,21 @@
 package timeSample;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.temporal.ChronoUnit;
+import java.time.temporal.*;
+
+class After2WeaksMonday implements TemporalAdjuster {
+
+    @Override
+    public Temporal adjustInto(Temporal temporal) {
+
+        //2주 후 월요일을 계산
+        Temporal temporal1 = temporal.plus(7, ChronoUnit.DAYS);
+        return temporal1.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+    }
+}
 
 public class Main {
 
@@ -85,6 +97,22 @@ public class Main {
         System.out.println(date.isEqual(date1));
     }
 
+    private static void sample8(){
+
+        LocalDate date = LocalDate.now();
+        System.out.println(date);
+
+        LocalDate date1 = date.with(ChronoField.YEAR, 2024);
+        System.out.println(date1);
+
+        LocalDate date2 = date.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+        System.out.println(date2);
+
+        LocalDate date3 = date.with(new After2WeaksMonday());
+        System.out.println(date3);
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -95,6 +123,7 @@ public class Main {
         //Main.sample4();
         //Main.sample5();
         //Main.sample6();
-        Main.sample7();
+        //Main.sample7();
+        Main.sample8();
     }
 }
