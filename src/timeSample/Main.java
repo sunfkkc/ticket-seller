@@ -46,6 +46,21 @@ public class Main {
         System.out.println(localTime);
     }
 
+    private static void sample5(){
+
+        LocalDate localDate = LocalDate.now();
+        System.out.println(localDate);
+
+        LocalDate changedDate = localDate.withMonth(4);
+        System.out.println(changedDate);
+
+        LocalDate date = localDate.withDayOfMonth(30);
+        System.out.println(date);
+
+        LocalDate date1 = localDate.withDayOfYear(364);
+        System.out.println(date1);
+    }
+
 
 
     public static void main(String[] args) {
@@ -53,6 +68,7 @@ public class Main {
         //Main.sample1();
         //Main.sample2();
         //Main.sample3();
-        Main.sample4();
+        //Main.sample4();
+        Main.sample5();
     }
 }
