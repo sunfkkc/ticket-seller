@@ -122,6 +122,25 @@ public class Main {
         System.out.println(time2.getMinute());
     }
 
+    private static void sample10(){
+
+        LocalDate date = LocalDate.of(2023, 3, 10);
+        LocalDate date1 = LocalDate.of(2023, 3, 11);
+
+        long period = date1.toEpochDay() - date.toEpochDay();
+
+        System.out.println(period);
+
+        LocalTime time = LocalTime.of(2, 45);
+        LocalTime time1 = LocalTime.of(3, 24);
+
+        long duration = time1.toSecondOfDay() - time.toSecondOfDay();
+
+
+        LocalTime time2 = LocalTime.of(0, 0).plusSeconds(duration);
+        System.out.println(time2);
+    }
+
 
 
     public static void main(String[] args) {
@@ -134,6 +153,7 @@ public class Main {
         //Main.sample6();
         //Main.sample7();
         //Main.sample8();
-        Main.sample9();
+        //Main.sample9();
+        Main.sample10();
     }
 }
