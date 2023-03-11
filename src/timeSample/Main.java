@@ -3,6 +3,7 @@ package timeSample;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 
 public class Main {
 
@@ -61,6 +62,19 @@ public class Main {
         System.out.println(date1);
     }
 
+    private static void sample6(){
+
+        LocalTime time = LocalTime.now();
+        System.out.println(time);
+
+        LocalTime time1 = time.truncatedTo(ChronoUnit.MINUTES);
+        System.out.println(time1);
+
+        LocalTime time2 = time.truncatedTo(ChronoUnit.HOURS);
+        System.out.println(time2);
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -69,6 +83,7 @@ public class Main {
         //Main.sample2();
         //Main.sample3();
         //Main.sample4();
-        Main.sample5();
+        //Main.sample5();
+        Main.sample6();
     }
 }
