@@ -37,10 +37,22 @@ public class Main {
 
     }
 
+    private static void sample4(){
+
+        LocalDate localDate = LocalDate.parse("1998-07-05");
+        System.out.println(localDate);
+
+        LocalTime localTime = LocalTime.parse("13:55");
+        System.out.println(localTime);
+    }
+
+
+
     public static void main(String[] args) {
 
         //Main.sample1();
         //Main.sample2();
-        Main.sample3();
+        //Main.sample3();
+        Main.sample4();
     }
 }
