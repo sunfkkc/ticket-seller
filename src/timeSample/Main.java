@@ -1,9 +1,6 @@
 package timeSample;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 import java.time.temporal.*;
 
 class After2WeaksMonday implements TemporalAdjuster {
@@ -113,6 +110,18 @@ public class Main {
 
     }
 
+    private static void sample9(){
+
+        LocalTime time = LocalTime.of(0, 0, 30);
+        LocalTime time1 = LocalTime.of(23, 30, 25);
+
+        Duration duration = Duration.between(time,time1);
+        System.out.println(duration);
+
+        LocalTime time2 = LocalTime.of(0, 0).plusSeconds(duration.getSeconds());
+        System.out.println(time2.getMinute());
+    }
+
 
 
     public static void main(String[] args) {
@@ -124,6 +133,7 @@ public class Main {
         //Main.sample5();
         //Main.sample6();
         //Main.sample7();
-        Main.sample8();
+        //Main.sample8();
+        Main.sample9();
     }
 }
